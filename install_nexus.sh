@@ -2,23 +2,17 @@
 
 # Update and install required packages
 echo "Updating system and installing dependencies..."
-sudo apt update && sudo apt install -y curl git build-essential unzip screen
+sudo apt update && sudo apt install -y curl git build-essential screen protobuf-compiler
 
-# Ensure cargo (Rust) is installed
+# Uninstall system-installed Rust (if any) and install Rust using rustup
+echo "Removing system-installed Rust..."
+sudo apt remove rustc -y
+sudo apt autoremove -y
+
 if ! command -v cargo &>/dev/null; then
-    echo "Installing Rust and Cargo..."
+    echo "Installing Rust and Cargo via rustup..."
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
     source "$HOME/.cargo/env"
-fi
-
-# Install latest Protobuf Compiler (protoc)
-PROTOC_VERSION=24.3
-if ! command -v protoc &>/dev/null; then
-    echo "Installing Protobuf Compiler (protoc) v$PROTOC_VERSION..."
-    curl -OL https://github.com/protocolbuffers/protobuf/releases/download/v$PROTOC_VERSION/protoc-$PROTOC_VERSION-linux-x86_64.zip
-    unzip -o protoc-$PROTOC_VERSION-linux-x86_64.zip -d $HOME/.local
-    echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
-    source ~/.bashrc
 fi
 
 # Verify installations
