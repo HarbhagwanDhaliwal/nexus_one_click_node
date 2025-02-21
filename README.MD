@@ -19,13 +19,15 @@ This **one-click script** will **automate** the installation of all required dep
 
 ## ⚡ **Quick Installation (One-Liner Command)**  
 
+---
+
 🔥 **Run this command to instantly install & start the Nexus node:**  
 
 ```bash
 wget -O install_nexus.sh https://raw.githubusercontent.com/HarbhagwanDhaliwal/nexus_one_click_node/main/install_nexus.sh && chmod +x install_nexus.sh && ./install_nexus.sh
 ```
 
----
+
 
 ## 📌 **Managing the Screen Session**  
 
