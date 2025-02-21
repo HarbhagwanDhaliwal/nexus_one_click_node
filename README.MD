@@ -1,11 +1,8 @@
+# 🚀 Nexus One-Click Node Setup
+
+This **one-click script** automates the installation of all required dependencies and sets up a **Nexus node** inside a `screen` session for easy management.
+
 ---
-
-### **README.md**  
-
-```markdown
-# 🚀 Nexus One-Click Node Setup  
-
-This **one-click script** will **automate** the installation of all required dependencies and set up a **Nexus node** inside a `screen` session for easy management.  
 
 ## 🎯 **Features**
 ✅ Installs **all required dependencies** (`curl`, `cargo`, `protoc`, `screen`).  
@@ -15,15 +12,14 @@ This **one-click script** will **automate** the installation of all required dep
 
 ---
 
-```
-
-## 🔥 **Run this command to instantly install & start the Nexus node:**  
+## 🔥 **Quick Installation**
+Run the following command to instantly install & start the Nexus node:
 
 ```bash
 wget -O install_nexus.sh https://raw.githubusercontent.com/HarbhagwanDhaliwal/nexus_one_click_node/main/install_nexus.sh && chmod +x install_nexus.sh && ./install_nexus.sh
 ```
 
-
+---
 
 ## 📌 **Managing the Screen Session**  
 
@@ -44,18 +40,18 @@ screen -S nexus -X quit
 
 ## 🛠️ **Alternative Installation (Manual Method)**  
 
-**Step 1️⃣:** Clone the repository  
+### **Step 1️⃣: Clone the Repository**  
 ```bash
 git clone https://github.com/HarbhagwanDhaliwal/nexus_one_click_node.git
 cd nexus_one_click_node
 ```
 
-**Step 2️⃣:** Give execution permission  
+### **Step 2️⃣: Grant Execution Permission**  
 ```bash
 chmod +x install_nexus.sh
 ```
 
-**Step 3️⃣:** Run the script  
+### **Step 3️⃣: Run the Script**  
 ```bash
 ./install_nexus.sh
 ```
@@ -65,7 +61,7 @@ chmod +x install_nexus.sh
 ## 🚑 **Troubleshooting**  
 
 🔹 **Issue: "Command Not Found" Errors**  
-If `cargo`, `protoc`, or any required tool is missing, manually install them:  
+If `cargo`, `protoc`, or any required tool is missing, manually install them:
 ```bash
 sudo apt update && sudo apt install -y protobuf-compiler curl screen
 ```
@@ -78,19 +74,9 @@ sudo apt update && sudo apt install -y protobuf-compiler curl screen
 ---
 
 ## 📜 **License**  
-This project is **open-source** and available under the **MIT License**.  
+This project is **open-source** and available under the **MIT License**.
 
 ---
 
 🚀✨ **Your Nexus node is now up and running!** 🎉  
-💡 **Use `screen -r nexus` to check the progress anytime.**  
-```
-
----
-
-### **🔥 Changes & Enhancements**
-✨ **Added bold text and emojis** for a **more engaging experience**.  
-✨ **Simplified instructions** with step-by-step guidance.  
-✨ **Highlighted important commands** for clarity.  
-
-Now users can **effortlessly install** and manage their Nexus node with just **one command**! 🚀 Let me know if you need any further refinements! 😃🔥
+💡 **Use `screen -r nexus` to check the progress anytime.**
