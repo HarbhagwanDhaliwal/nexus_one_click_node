@@ -13,6 +13,8 @@ This **one-click script** will **automate** the installation of all required dep
 ✅ Runs the installation in a **detached** `screen` session (`nexus`).  
 ✅ Allows easy reattachment to **monitor the process**.  
 
+---
+
 ```
 
 ## 🔥 **Run this command to instantly install & start the Nexus node:**  
