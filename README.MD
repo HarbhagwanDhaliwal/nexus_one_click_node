@@ -9,6 +9,7 @@ This **one-click script** automates the installation of all required dependencie
 ✅ **Automatically downloads & installs** the Nexus CLI.  
 ✅ Runs the installation in a **detached** `screen` session (`nexus`).  
 ✅ Allows easy reattachment to **monitor the process**.  
+✅ Requires user to **accept terms and conditions** and **provide a node ID** during installation.
 
 ---
 
@@ -21,9 +22,18 @@ wget -O install_nexus.sh https://raw.githubusercontent.com/HarbhagwanDhaliwal/ne
 
 ---
 
+## 📌 **During Installation**
+1. **Follow the on-screen instructions** in the terminal.
+2. **Accept the terms and conditions** when prompted.
+3. **Enter your node ID** when requested.
+4. The installation will run inside a `screen` session (`nexus`).
+5. **Detach the screen** when the installation completes.
+
+---
+
 ## 📌 **Managing the Screen Session**  
 
-🟢 **Check installation progress:**  
+🟢 **Check installation progress or logs:**  
 ```bash
 screen -r nexus
 ```
@@ -80,3 +90,4 @@ This project is **open-source** and available under the **MIT License**.
 
 🚀✨ **Your Nexus node is now up and running!** 🎉  
 💡 **Use `screen -r nexus` to check the progress anytime.**
+
