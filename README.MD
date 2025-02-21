@@ -1,5 +1,3 @@
-Here’s an **enhanced README.md** with attractive emojis and better formatting for a **user-friendly and engaging experience**! 🚀🔥  
-
 ---
 
 ### **README.md**  
@@ -14,8 +12,6 @@ This **one-click script** will **automate** the installation of all required dep
 ✅ **Automatically downloads & installs** the Nexus CLI.  
 ✅ Runs the installation in a **detached** `screen` session (`nexus`).  
 ✅ Allows easy reattachment to **monitor the process**.  
-
----
 
 ```
 
