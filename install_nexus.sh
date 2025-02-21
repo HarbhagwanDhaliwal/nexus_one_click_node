@@ -2,7 +2,7 @@
 
 # Update and install required packages
 echo "Updating system and installing dependencies..."
-sudo apt update && sudo apt install -y curl git build-essential screen protobuf-compiler
+sudo apt update && sudo apt install -y curl git build-essential unzip screen protobuf-compiler
 
 # Uninstall system-installed Rust (if any) and install Rust using rustup
 echo "Removing system-installed Rust..."
