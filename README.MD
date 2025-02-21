@@ -17,12 +17,6 @@ This **one-click script** will **automate** the installation of all required dep
 
 ---
 
-## ⚡ **Quick Installation (One-Liner Command)**  
-
-
-
----
-
 ```
 
 ## 🔥 **Run this command to instantly install & start the Nexus node:**  
